@@ -1,0 +1,15 @@
+{
+  "name": "e_commerce_models",
+  "version": "1.0.0",
+  "description": "\"I learning mongoose Model\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "sudhanshuJha01",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  }
+}

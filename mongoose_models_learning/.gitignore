@@ -1,0 +1,16 @@
+# .gitignore
+
+# Node.js dependencies
+node_modules/
+
+# MongoDB Mongoose
+/models/
+
+
+# IDE and editor-specific files 
+# .vscode/
+
+
+# Logs
+# logs/
+# *.log
