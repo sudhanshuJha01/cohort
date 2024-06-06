@@ -1,0 +1,17 @@
+{
+  "name": "backendlearning",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "I am learning bacics of backend and the Data bases in it",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "author": "sudhanshuJha01",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "nodemon": "^3.1.3"
+  }
+}
