@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'express';  //not using require here changed type in the package.json in modules ok
 
 const calculateSum = (n)=>{
     let sum = 0 ;
@@ -22,7 +22,7 @@ app.get('/' , (req , res)=>{
 })
 
 
-app.listen(3000,()=>{
+app.listen(3001,()=>{
     console.log("Your logic is working");
     
 })
