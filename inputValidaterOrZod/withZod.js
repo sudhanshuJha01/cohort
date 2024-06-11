@@ -14,19 +14,13 @@ app.post('/', (req, res) => {
     // Validate the list using the schema
     const validationResult = schema.safeParse(list);
 
-    if (!validationResult.success) {
-        return res.status(400).json({
-            msg: "Validation error",
-            errors: validationResult.error.errors
-        });
-    }
+    res.send({
+        validationResult
+    })
 
-    res.json({
-        msg: "Validation succeeded",
-        list: validationResult.data
-    });
+
 });
 
-app.listen(3008, () => {
-    console.log("Your server is on PORT 3008");
+app.listen(3009, () => {
+    console.log("Your server is on PORT 3009");
 });
