@@ -9,6 +9,7 @@ const app = express();
 
 app.use(express.json())
 
+
 app.post('/signup' , async (req , res)=>{
     const name = req.body.name;
     const email = req.body.email;
