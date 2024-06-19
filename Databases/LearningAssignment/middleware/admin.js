@@ -1,9 +1,8 @@
-// Middleware for handling auth
 import {Admin} from '../db/index.js'
 
 async function adminMiddleware(req, res, next) {
-    const username = req.body.username;
-    const password = req.body.password;
+    const username = req.headers.username;
+    const password = req.headers.password;
 
     const adminFound = await Admin.findOne({
         username:username,
@@ -14,7 +13,9 @@ async function adminMiddleware(req, res, next) {
         next();
     }else{
         res.json({
-            msg:"Admin not found"
+            msg:"Admin not found" , 
+            username , 
+            password
         })
     }
 

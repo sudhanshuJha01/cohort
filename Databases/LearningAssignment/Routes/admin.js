@@ -36,15 +36,20 @@ router.post('/courses',adminMiddleware, async (req , res)=>{
         price,
         imageLink
     })
-
+    console.log(course);
+    
     res.json({
-        msg:'Course created successfully', courseId:course._id
+        msg:'Course created successfully', courseId:course._id , 
     })
 
 })
 
-router.get('/courses' ,adminMiddleware, (req , res)=>{
+router.get('/courses' ,adminMiddleware, async (req , res)=>{
+    const response= await Course.find({});
 
+    res.json({
+      courses:response
+    })
 })
 
 
