@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from "mongoose";
-
-mongoose.connect("mongodb+srv://sudhanshuJha01:Anshuman2009@cluster0.qijccr3.mongodb.net/FirstusersAPP")
+import {mongodburi} from '../../../hiddenVariable.js'
+mongoose.connect(mongodburi+"FirstusersAPP")
 
 const User = mongoose.model('User', { name: String , email:String , password:String });
 
