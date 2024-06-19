@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import {mongodburi} from '../../../hiddenVariable.js'
+import {mongodburi} from '../../../hiddenVar.js'
 mongoose.connect(mongodburi+"courseSellingApp");
 
 

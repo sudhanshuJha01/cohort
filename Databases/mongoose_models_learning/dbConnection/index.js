@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from "mongoose";
-import {mongodburi} from '../../../hiddenVariable.js'
+import {mongodburi} from '../../../hiddenVar.js'
 mongoose.connect(mongodburi+"FirstusersAPP")
 
 const User = mongoose.model('User', { name: String , email:String , password:String });
