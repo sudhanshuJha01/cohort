@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
-
-
-mongoose.connect('mongodb+srv://sudhanshuJha01:Anshuman2009@cluster0.qijccr3.mongodb.net/courseSellingApp');
+import {mongodburi} from '../../../hiddenVariable.js'
+mongoose.connect(mongodburi+"courseSellingApp");
 
 
 const AdminSchema = new mongoose.Schema({

@@ -15,4 +15,6 @@ node_modules/
 # logs/
 # *.log
 
-Databases/mongoose_models_learning/dbConnection/index.js
+
+hiddenVariable.js/
+
